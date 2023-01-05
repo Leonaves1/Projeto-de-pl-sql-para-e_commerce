@@ -8,19 +8,18 @@ Sistema de gerenciamento de videos para E-commerce, trabalho proposto pela FIAP,
 
 # Arquivos
 
-* apaga.sql - vai realizar drop de todas as tabelas e sequences.
+* comando DRL.sql - varios requerimentos de 'select' para identificar nas tabelas.
 
-* cria.sql - vai criar todas as tabelas e sequences.
+* comando DDL.sql - vai criar todas as tabelas e sequences.
 
-* cria_popula.sql - scrip Que vai realizar drop de todas as tabelas e sequences, depois vai criar todas as tabelas e sequences e por fim vai fazer a população de todas as tabelas.
+* comando DML.sql - scrip Que vai realizar drop de todas as tabelas e sequences, depois vai criar todas as tabelas e sequences e por fim vai fazer a população de todas as tabelas.
 
-* cursor_popula_SAC.sql - é um cursor Que realiza a população da tabela SAC ocorrência.
+* cursor.sql - é um cursor Que realiza a população da tabela SAC ocorrência.
 
-* procedure_valida_CPF.sql - é uma stored procedure Que realiza a validação de um CPF quando ela é chamada.
+* validaçao CPF.sql - é uma stored procedure Que realiza a validação de um CPF quando ela é chamada.
 
-* script_popula_tabelas.sql - é um script contendo dados para realizar a população das tabelas.
-
-* trigger_valida_CPF.sql - é uma trigger for each row Que é acionada sempre que uma tentativa de insert ou update de cpf é realizada, a trigger chama a procedure de validação de cpf.
+* trigger validaçao CPF.sql - é uma trigger for each row Que é acionada sempre que uma tentativa de insert ou update de cpf é realizada, a trigger chama a procedure de validação de cpf.
 
 * modelo_fisico.pdf - Modelagem fisica do banco de dados.
 
+* modelo_logico.pdf - Modelagem logica do banco de dados.
