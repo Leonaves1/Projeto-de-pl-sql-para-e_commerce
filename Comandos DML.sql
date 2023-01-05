@@ -1,8 +1,8 @@
--- INSTRU«√O DML
+-- INSTRU√á√ÉO DML
 
--- (nome da sequence).next val PARA USAR A SEQUENCE NA INSER«√O DE DADOS
+-- (nome da sequence).next val PARA USAR A SEQUENCE NA INSER√á√ÉO DE DADOS
 
--- LETRA A
+-- LETRA A -Popular a tabela DEPARTAMENTO, inserindo no m√≠nimo sete departamentos.
 
 INSERT INTO t_mc_depto ( cd_depto,   nm_depto, st_depto ) VALUES (SQ_MC_DEPTO.nextval ,    'Comercial', 'A');
 
@@ -12,13 +12,13 @@ INSERT INTO t_mc_depto ( cd_depto,   nm_depto, st_depto ) VALUES (SQ_MC_DEPTO.ne
 
 INSERT INTO t_mc_depto ( cd_depto,   nm_depto, st_depto ) VALUES (SQ_MC_DEPTO.nextval ,    'Financeiro', 'A');
 
-INSERT INTO t_mc_depto ( cd_depto,   nm_depto, st_depto ) VALUES (SQ_MC_DEPTO.nextval ,    'SAC (ServiÁo de Atendimento ao Cliente)', 'A');
+INSERT INTO t_mc_depto ( cd_depto,   nm_depto, st_depto ) VALUES (SQ_MC_DEPTO.nextval ,    'SAC (Servi√ßo de Atendimento ao Cliente)', 'A');
 
 INSERT INTO t_mc_depto ( cd_depto,   nm_depto, st_depto ) VALUES (SQ_MC_DEPTO.nextval ,    'Recursos Humanos (RH)', 'A');
 
-INSERT INTO t_mc_depto ( cd_depto,   nm_depto, st_depto ) VALUES (SQ_MC_DEPTO.nextval ,    'Tecnologia da InformaÁ„o (TI)', 'A');
+INSERT INTO t_mc_depto ( cd_depto,   nm_depto, st_depto ) VALUES (SQ_MC_DEPTO.nextval ,    'Tecnologia da Informa√ß√£o (TI)', 'A');
 
--- LETRA B
+-- LETRA B -  Popular a tabela FUNCIONARIO, inserindo no m√≠nimo 3 funcion√°rios para cada departamento criado.
 
 INSERT INTO t_mc_funcionario 
     ( cd_funcionario, cd_depto, cd_gerente, nm_funcionario, dt_nascimento, fl_sexo_biologico, ds_genero, ds_cargo, vl_salario, ds_email, st_func, dt_cadastramento, dt_desligamento) 
@@ -95,7 +95,7 @@ VALUES
 INSERT INTO t_mc_funcionario 
     ( cd_funcionario, cd_depto, cd_gerente, nm_funcionario, dt_nascimento, fl_sexo_biologico, ds_genero, ds_cargo, vl_salario, ds_email, st_func, dt_cadastramento, dt_desligamento) 
 VALUES 
-    (SQ_MC_FUNCIONARIO.nextval, 3, null, 'Matheus LourenÁo',
+    (SQ_MC_FUNCIONARIO.nextval, 3, null, 'Matheus Louren√ßo',
     TO_DATE('20/06/1997','DD/MM/YYYY'),
     'M', 'Heterossexual', null, 1100.00, null, 'A',
     TO_DATE('05/01/2019','DD/MM/YYYY'),
@@ -122,7 +122,7 @@ VALUES
 INSERT INTO t_mc_funcionario 
     ( cd_funcionario, cd_depto, cd_gerente, nm_funcionario, dt_nascimento, fl_sexo_biologico, ds_genero, ds_cargo, vl_salario, ds_email, st_func, dt_cadastramento, dt_desligamento) 
 VALUES 
-    (SQ_MC_FUNCIONARIO.nextval, 4, null, 'Jo„o Marcelo Amaral',
+    (SQ_MC_FUNCIONARIO.nextval, 4, null, 'Jo√£o Marcelo Amaral',
     TO_DATE('21/08/1999','DD/MM/YYYY'),
     'M', 'Heterossexual', null, 3400.00, null, 'A',
     TO_DATE('22/11/2018','DD/MM/YYYY'),
@@ -185,7 +185,7 @@ VALUES
 INSERT INTO t_mc_funcionario 
     ( cd_funcionario, cd_depto, cd_gerente, nm_funcionario, dt_nascimento, fl_sexo_biologico, ds_genero, ds_cargo, vl_salario, ds_email, st_func, dt_cadastramento, dt_desligamento) 
 VALUES 
-    (SQ_MC_FUNCIONARIO.nextval, 7, null, 'Caio GonÁalves',
+    (SQ_MC_FUNCIONARIO.nextval, 7, null, 'Caio Gon√ßalves',
     TO_DATE('19/10/1998','DD/MM/YYYY'),
     'M', 'Heterossexual', null, 4600.00, null, 'A',
     TO_DATE('14/05/2017','DD/MM/YYYY'),
@@ -209,7 +209,7 @@ VALUES
     TO_DATE('23/07/2020','DD/MM/YYYY'),
     null);              
     
--- LETRA C
+-- LETRA C - Popular todos os ESTADOS do Brasil e associe no m√≠nimo tr√™s cidades para cada Estado. Para cada cidade, associe no m√≠nimo tr√™s bairros, e para cada bairro, associe tr√™s endere√ßos. Utilize nomes significativos e coerentes, de acordo com a base do Correio. Para contribuir, segue uma sugest√£o de link de endere√ßos
 
 -- Carregando ESTADOS
 
@@ -226,7 +226,7 @@ VALUES
 INSERT INTO t_mc_estado
     ( sg_estado, nm_estado) 
 VALUES 
-    ('AP', 'Amap·');     
+    ('AP', 'Amap√°');     
     
 INSERT INTO t_mc_estado
     ( sg_estado, nm_estado) 
@@ -241,7 +241,7 @@ VALUES
 INSERT INTO t_mc_estado
     ( sg_estado, nm_estado) 
 VALUES 
-    ('CE', 'Cear·');
+    ('CE', 'Cear√°');
     
 INSERT INTO t_mc_estado
     ( sg_estado, nm_estado) 
@@ -256,12 +256,12 @@ VALUES
 INSERT INTO t_mc_estado
     ( sg_estado, nm_estado) 
 VALUES 
-    ('GO', 'Goi·s');
+    ('GO', 'Goi√°s');
     
 INSERT INTO t_mc_estado
     ( sg_estado, nm_estado) 
 VALUES 
-    ('MA', 'Maranh„o');
+    ('MA', 'Maranh√£o');
     
 INSERT INTO t_mc_estado
     ( sg_estado, nm_estado) 
@@ -281,17 +281,17 @@ VALUES
 INSERT INTO t_mc_estado
     ( sg_estado, nm_estado) 
 VALUES 
-    ('PA', 'Par·');
+    ('PA', 'Par√°');
     
 INSERT INTO t_mc_estado
     ( sg_estado, nm_estado) 
 VALUES 
-    ('PB', 'ParaÌba');
+    ('PB', 'Para√≠ba');
     
 INSERT INTO t_mc_estado
     ( sg_estado, nm_estado) 
 VALUES 
-    ('PR', 'Paran·');
+    ('PR', 'Paran√°');
     
 INSERT INTO t_mc_estado
     ( sg_estado, nm_estado) 
@@ -301,7 +301,7 @@ VALUES
 INSERT INTO t_mc_estado
     ( sg_estado, nm_estado) 
 VALUES 
-    ('PI', 'PiauÌ');
+    ('PI', 'Piau√≠');
     
 INSERT INTO t_mc_estado
     ( sg_estado, nm_estado) 
@@ -321,7 +321,7 @@ VALUES
 INSERT INTO t_mc_estado
     ( sg_estado, nm_estado) 
 VALUES 
-    ('RO', 'RondÙnia');
+    ('RO', 'Rond√¥nia');
     
 INSERT INTO t_mc_estado
     ( sg_estado, nm_estado) 
@@ -336,7 +336,7 @@ VALUES
 INSERT INTO t_mc_estado
     ( sg_estado, nm_estado) 
 VALUES 
-    ('SP', 'S„o Paulo');    
+    ('SP', 'S√£o Paulo');    
     
 INSERT INTO t_mc_estado
     ( sg_estado, nm_estado) 
@@ -358,17 +358,17 @@ VALUES
 INSERT INTO t_mc_cidade
     ( cd_cidade, sg_estado, nm_cidade, cd_ibge, nr_ddd) 
 VALUES 
-    (SQ_MC_CIDADE.nextval, 'AC', 'AcrÍlandia', 1200013, 68);
+    (SQ_MC_CIDADE.nextval, 'AC', 'Acr√™landia', 1200013, 68);
     
 INSERT INTO t_mc_cidade
     ( cd_cidade, sg_estado, nm_cidade, cd_ibge, nr_ddd) 
 VALUES 
-    (SQ_MC_CIDADE.nextval, 'AC', 'BrasilÈia', 1200104, 68);  
+    (SQ_MC_CIDADE.nextval, 'AC', 'Brasil√©ia', 1200104, 68);  
     
 INSERT INTO t_mc_cidade
     ( cd_cidade, sg_estado, nm_cidade, cd_ibge, nr_ddd) 
 VALUES 
-    (SQ_MC_CIDADE.nextval, 'AL', 'BelÈm', 1501402, 82);  
+    (SQ_MC_CIDADE.nextval, 'AL', 'Bel√©m', 1501402, 82);  
     
 INSERT INTO t_mc_cidade
     ( cd_cidade, sg_estado, nm_cidade, cd_ibge, nr_ddd) 
@@ -383,7 +383,7 @@ VALUES
 INSERT INTO t_mc_cidade
     ( cd_cidade, sg_estado, nm_cidade, cd_ibge, nr_ddd) 
 VALUES 
-    (SQ_MC_CIDADE.nextval, 'AP', 'Amap·', 1600105, 96);     
+    (SQ_MC_CIDADE.nextval, 'AP', 'Amap√°', 1600105, 96);     
     
 INSERT INTO t_mc_cidade
     ( cd_cidade, sg_estado, nm_cidade, cd_ibge, nr_ddd) 
@@ -393,7 +393,7 @@ VALUES
 INSERT INTO t_mc_cidade
     ( cd_cidade, sg_estado, nm_cidade, cd_ibge, nr_ddd) 
 VALUES 
-    (SQ_MC_CIDADE.nextval, 'AP', 'Mazag„o', 1600402, 96);
+    (SQ_MC_CIDADE.nextval, 'AP', 'Mazag√£o', 1600402, 96);
     
 INSERT INTO t_mc_cidade
     ( cd_cidade, sg_estado, nm_cidade, cd_ibge, nr_ddd) 
@@ -418,7 +418,7 @@ VALUES
 INSERT INTO t_mc_cidade
     ( cd_cidade, sg_estado, nm_cidade, cd_ibge, nr_ddd) 
 VALUES 
-    (SQ_MC_CIDADE.nextval, 'BA', 'S„o Francisco do Conde', 2929206, 71);
+    (SQ_MC_CIDADE.nextval, 'BA', 'S√£o Francisco do Conde', 2929206, 71);
     
 INSERT INTO t_mc_cidade
     ( cd_cidade, sg_estado, nm_cidade, cd_ibge, nr_ddd) 
@@ -443,7 +443,7 @@ VALUES
 INSERT INTO t_mc_cidade
     ( cd_cidade, sg_estado, nm_cidade, cd_ibge, nr_ddd) 
 VALUES 
-    (SQ_MC_CIDADE.nextval, 'ES', 'VitÛria', 3205309, 27);
+    (SQ_MC_CIDADE.nextval, 'ES', 'Vit√≥ria', 3205309, 27);
     
 INSERT INTO t_mc_cidade
     ( cd_cidade, sg_estado, nm_cidade, cd_ibge, nr_ddd) 
@@ -458,7 +458,7 @@ VALUES
 INSERT INTO t_mc_cidade
     ( cd_cidade, sg_estado, nm_cidade, cd_ibge, nr_ddd) 
 VALUES 
-    (SQ_MC_CIDADE.nextval, 'GO', 'Goi‚nia', 5208707, 62);     
+    (SQ_MC_CIDADE.nextval, 'GO', 'Goi√¢nia', 5208707, 62);     
     
 INSERT INTO t_mc_cidade
     ( cd_cidade, sg_estado, nm_cidade, cd_ibge, nr_ddd) 
@@ -468,12 +468,12 @@ VALUES
 INSERT INTO t_mc_cidade
     ( cd_cidade, sg_estado, nm_cidade, cd_ibge, nr_ddd) 
 VALUES 
-    (SQ_MC_CIDADE.nextval, 'GO', 'Crix·s', 5206404, 62);   
+    (SQ_MC_CIDADE.nextval, 'GO', 'Crix√°s', 5206404, 62);   
     
 INSERT INTO t_mc_cidade
     ( cd_cidade, sg_estado, nm_cidade, cd_ibge, nr_ddd) 
 VALUES 
-    (SQ_MC_CIDADE.nextval, 'MA', 'S„o Luis', 2111300, 98);    
+    (SQ_MC_CIDADE.nextval, 'MA', 'S√£o Luis', 2111300, 98);    
     
 INSERT INTO t_mc_cidade
     ( cd_cidade, sg_estado, nm_cidade, cd_ibge, nr_ddd) 
@@ -488,7 +488,7 @@ VALUES
 INSERT INTO t_mc_cidade
     ( cd_cidade, sg_estado, nm_cidade, cd_ibge, nr_ddd) 
 VALUES 
-    (SQ_MC_CIDADE.nextval, 'MT', 'Cuiab·', 5103403, 65); 
+    (SQ_MC_CIDADE.nextval, 'MT', 'Cuiab√°', 5103403, 65); 
     
 INSERT INTO t_mc_cidade
     ( cd_cidade, sg_estado, nm_cidade, cd_ibge, nr_ddd) 
@@ -533,7 +533,7 @@ VALUES
 INSERT INTO t_mc_cidade
     ( cd_cidade, sg_estado, nm_cidade, cd_ibge, nr_ddd) 
 VALUES 
-    (SQ_MC_CIDADE.nextval, 'PA', 'BelÈm', 1501402, 91);    
+    (SQ_MC_CIDADE.nextval, 'PA', 'Bel√©m', 1501402, 91);    
     
 INSERT INTO t_mc_cidade
     ( cd_cidade, sg_estado, nm_cidade, cd_ibge, nr_ddd) 
@@ -543,12 +543,12 @@ VALUES
 INSERT INTO t_mc_cidade
     ( cd_cidade, sg_estado, nm_cidade, cd_ibge, nr_ddd) 
 VALUES 
-    (SQ_MC_CIDADE.nextval, 'PA', 'OurÈm', 1505403, 91);    
+    (SQ_MC_CIDADE.nextval, 'PA', 'Our√©m', 1505403, 91);    
     
 INSERT INTO t_mc_cidade
     ( cd_cidade, sg_estado, nm_cidade, cd_ibge, nr_ddd) 
 VALUES 
-    (SQ_MC_CIDADE.nextval, 'PB', 'Jo„o Pessoa', 2507507, 83);      
+    (SQ_MC_CIDADE.nextval, 'PB', 'Jo√£o Pessoa', 2507507, 83);      
     
 INSERT INTO t_mc_cidade
     ( cd_cidade, sg_estado, nm_cidade, cd_ibge, nr_ddd) 
@@ -568,7 +568,7 @@ VALUES
 INSERT INTO t_mc_cidade
     ( cd_cidade, sg_estado, nm_cidade, cd_ibge, nr_ddd) 
 VALUES 
-    (SQ_MC_CIDADE.nextval, 'PR', 'Arauc·ria', 4101804, 41); 
+    (SQ_MC_CIDADE.nextval, 'PR', 'Arauc√°ria', 4101804, 41); 
     
 INSERT INTO t_mc_cidade
     ( cd_cidade, sg_estado, nm_cidade, cd_ibge, nr_ddd) 
@@ -628,7 +628,7 @@ VALUES
 INSERT INTO t_mc_cidade
     ( cd_cidade, sg_estado, nm_cidade, cd_ibge, nr_ddd) 
 VALUES 
-    (SQ_MC_CIDADE.nextval, 'RN', 'MossorÛ', 2408003, 84);  
+    (SQ_MC_CIDADE.nextval, 'RN', 'Mossor√≥', 2408003, 84);  
     
 INSERT INTO t_mc_cidade
     ( cd_cidade, sg_estado, nm_cidade, cd_ibge, nr_ddd) 
@@ -663,7 +663,7 @@ VALUES
 INSERT INTO t_mc_cidade
     ( cd_cidade, sg_estado, nm_cidade, cd_ibge, nr_ddd) 
 VALUES 
-    (SQ_MC_CIDADE.nextval, 'RO', 'Urup·', 1101708, 69); 
+    (SQ_MC_CIDADE.nextval, 'RO', 'Urup√°', 1101708, 69); 
     
 INSERT INTO t_mc_cidade
     ( cd_cidade, sg_estado, nm_cidade, cd_ibge, nr_ddd) 
@@ -673,7 +673,7 @@ VALUES
 INSERT INTO t_mc_cidade
     ( cd_cidade, sg_estado, nm_cidade, cd_ibge, nr_ddd) 
 VALUES 
-    (SQ_MC_CIDADE.nextval, 'RR', 'Cant·', 1400175, 95);    
+    (SQ_MC_CIDADE.nextval, 'RR', 'Cant√°', 1400175, 95);    
     
 INSERT INTO t_mc_cidade
     ( cd_cidade, sg_estado, nm_cidade, cd_ibge, nr_ddd) 
@@ -683,7 +683,7 @@ VALUES
 INSERT INTO t_mc_cidade
     ( cd_cidade, sg_estado, nm_cidade, cd_ibge, nr_ddd) 
 VALUES 
-    (SQ_MC_CIDADE.nextval, 'SC', 'FlorianÛpolis', 4205407, 48);  
+    (SQ_MC_CIDADE.nextval, 'SC', 'Florian√≥polis', 4205407, 48);  
     
 INSERT INTO t_mc_cidade
     ( cd_cidade, sg_estado, nm_cidade, cd_ibge, nr_ddd) 
@@ -693,12 +693,12 @@ VALUES
 INSERT INTO t_mc_cidade
     ( cd_cidade, sg_estado, nm_cidade, cd_ibge, nr_ddd) 
 VALUES 
-    (SQ_MC_CIDADE.nextval, 'SC', 'Maracaj·', 4210407, 48);
+    (SQ_MC_CIDADE.nextval, 'SC', 'Maracaj√°', 4210407, 48);
     
 INSERT INTO t_mc_cidade
     ( cd_cidade, sg_estado, nm_cidade, cd_ibge, nr_ddd) 
 VALUES 
-    (SQ_MC_CIDADE.nextval, 'SP', 'S„o Paulo', 3550308, 11);    
+    (SQ_MC_CIDADE.nextval, 'SP', 'S√£o Paulo', 3550308, 11);    
     
 INSERT INTO t_mc_cidade
     ( cd_cidade, sg_estado, nm_cidade, cd_ibge, nr_ddd) 
@@ -765,7 +765,7 @@ VALUES
 INSERT INTO t_mc_bairro
     ( cd_bairro, cd_cidade, nm_bairro, nm_zona_bairro) 
 VALUES 
-    (SQ_MC_BAIRRO.nextval, 2, 'Vila RedenÁ„o', null);    
+    (SQ_MC_BAIRRO.nextval, 2, 'Vila Reden√ß√£o', null);    
     
 INSERT INTO t_mc_bairro
     ( cd_bairro, cd_cidade, nm_bairro, nm_zona_bairro) 
@@ -795,7 +795,7 @@ VALUES
 INSERT INTO t_mc_bairro
     ( cd_bairro, cd_cidade, nm_bairro, nm_zona_bairro) 
 VALUES 
-    (SQ_MC_BAIRRO.nextval, 4, 'CremaÁ„o', null);
+    (SQ_MC_BAIRRO.nextval, 4, 'Crema√ß√£o', null);
 
 INSERT INTO t_mc_bairro
     ( cd_bairro, cd_cidade, nm_bairro, nm_zona_bairro) 
@@ -815,7 +815,7 @@ VALUES
 INSERT INTO t_mc_bairro
     ( cd_bairro, cd_cidade, nm_bairro, nm_zona_bairro) 
 VALUES 
-    (SQ_MC_BAIRRO.nextval, 5, 'Area Jo„o Miranda', null);
+    (SQ_MC_BAIRRO.nextval, 5, 'Area Jo√£o Miranda', null);
 
 INSERT INTO t_mc_bairro
     ( cd_bairro, cd_cidade, nm_bairro, nm_zona_bairro) 
@@ -845,7 +845,7 @@ VALUES
 INSERT INTO t_mc_bairro
     ( cd_bairro, cd_cidade, nm_bairro, nm_zona_bairro) 
 VALUES 
-    (SQ_MC_BAIRRO.nextval, 7, 'Arax·', null);
+    (SQ_MC_BAIRRO.nextval, 7, 'Arax√°', null);
 
 INSERT INTO t_mc_bairro
     ( cd_bairro, cd_cidade, nm_bairro, nm_zona_bairro) 
@@ -875,7 +875,7 @@ VALUES
 INSERT INTO t_mc_bairro
     ( cd_bairro, cd_cidade, nm_bairro, nm_zona_bairro) 
 VALUES 
-    (SQ_MC_BAIRRO.nextval, 9, 'Carv„o', null);
+    (SQ_MC_BAIRRO.nextval, 9, 'Carv√£o', null);
     
 INSERT INTO t_mc_bairro
     ( cd_bairro, cd_cidade, nm_bairro, nm_zona_bairro) 
@@ -915,7 +915,7 @@ VALUES
 INSERT INTO t_mc_bairro
     ( cd_bairro, cd_cidade, nm_bairro, nm_zona_bairro) 
 VALUES 
-    (SQ_MC_BAIRRO.nextval, 12, 'ColÙnia', null);     
+    (SQ_MC_BAIRRO.nextval, 12, 'Col√¥nia', null);     
     
 INSERT INTO t_mc_bairro
     ( cd_bairro, cd_cidade, nm_bairro, nm_zona_bairro) 
@@ -980,7 +980,7 @@ VALUES
 INSERT INTO t_mc_bairro
     ( cd_bairro, cd_cidade, nm_bairro, nm_zona_bairro) 
 VALUES 
-    (SQ_MC_BAIRRO.nextval, 16, 'F·tima', null);    
+    (SQ_MC_BAIRRO.nextval, 16, 'F√°tima', null);    
     
 INSERT INTO t_mc_bairro
     ( cd_bairro, cd_cidade, nm_bairro, nm_zona_bairro) 
@@ -995,17 +995,17 @@ VALUES
 INSERT INTO t_mc_bairro
     ( cd_bairro, cd_cidade, nm_bairro, nm_zona_bairro) 
 VALUES 
-    (SQ_MC_BAIRRO.nextval, 17, 'S„o Jo„o', null);    
+    (SQ_MC_BAIRRO.nextval, 17, 'S√£o Jo√£o', null);    
     
 INSERT INTO t_mc_bairro
     ( cd_bairro, cd_cidade, nm_bairro, nm_zona_bairro) 
 VALUES 
-    (SQ_MC_BAIRRO.nextval, 17, 'S„o Benedito', null);       
+    (SQ_MC_BAIRRO.nextval, 17, 'S√£o Benedito', null);       
     
  INSERT INTO t_mc_bairro
     ( cd_bairro, cd_cidade, nm_bairro, nm_zona_bairro) 
 VALUES 
-    (SQ_MC_BAIRRO.nextval, 18, 'Boqueir„o Ces·rio', null);    
+    (SQ_MC_BAIRRO.nextval, 18, 'Boqueir√£o Ces√°rio', null);    
     
 INSERT INTO t_mc_bairro
     ( cd_bairro, cd_cidade, nm_bairro, nm_zona_bairro) 
@@ -1055,7 +1055,7 @@ VALUES
 INSERT INTO t_mc_bairro
     ( cd_bairro, cd_cidade, nm_bairro, nm_zona_bairro) 
 VALUES 
-    (SQ_MC_BAIRRO.nextval, 21, 'MuquiÁaba', null);    
+    (SQ_MC_BAIRRO.nextval, 21, 'Muqui√ßaba', null);    
     
 INSERT INTO t_mc_bairro
     ( cd_bairro, cd_cidade, nm_bairro, nm_zona_bairro) 
@@ -1070,12 +1070,12 @@ VALUES
 INSERT INTO t_mc_bairro
     ( cd_bairro, cd_cidade, nm_bairro, nm_zona_bairro) 
 VALUES 
-    (SQ_MC_BAIRRO.nextval, 22, 'Nova SuiÁa', null);    
+    (SQ_MC_BAIRRO.nextval, 22, 'Nova Sui√ßa', null);    
     
 INSERT INTO t_mc_bairro
     ( cd_bairro, cd_cidade, nm_bairro, nm_zona_bairro) 
 VALUES 
-    (SQ_MC_BAIRRO.nextval, 22, 'Parque AmazÙnica', null);            
+    (SQ_MC_BAIRRO.nextval, 22, 'Parque Amaz√¥nica', null);            
     
 INSERT INTO t_mc_bairro
     ( cd_bairro, cd_cidade, nm_bairro, nm_zona_bairro) 
@@ -1090,7 +1090,7 @@ VALUES
 INSERT INTO t_mc_bairro
     ( cd_bairro, cd_cidade, nm_bairro, nm_zona_bairro) 
 VALUES 
-    (SQ_MC_BAIRRO.nextval, 23, 'Setor Magalh„es', null);      
+    (SQ_MC_BAIRRO.nextval, 23, 'Setor Magalh√£es', null);      
     
 INSERT INTO t_mc_bairro
     ( cd_bairro, cd_cidade, nm_bairro, nm_zona_bairro) 
@@ -1100,12 +1100,12 @@ VALUES
 INSERT INTO t_mc_bairro
     ( cd_bairro, cd_cidade, nm_bairro, nm_zona_bairro) 
 VALUES 
-    (SQ_MC_BAIRRO.nextval, 24, 'Vila S„o Jo„o', null);    
+    (SQ_MC_BAIRRO.nextval, 24, 'Vila S√£o Jo√£o', null);    
     
 INSERT INTO t_mc_bairro
     ( cd_bairro, cd_cidade, nm_bairro, nm_zona_bairro) 
 VALUES 
-    (SQ_MC_BAIRRO.nextval, 24, 'Vila S„o JosÈ', null);     
+    (SQ_MC_BAIRRO.nextval, 24, 'Vila S√£o Jos√©', null);     
     
 INSERT INTO t_mc_bairro
     ( cd_bairro, cd_cidade, nm_bairro, nm_zona_bairro) 
@@ -1180,12 +1180,12 @@ VALUES
 INSERT INTO t_mc_bairro
     ( cd_bairro, cd_cidade, nm_bairro, nm_zona_bairro) 
 VALUES 
-    (SQ_MC_BAIRRO.nextval, 28, 'Ribeir„o da Ponte', null);     
+    (SQ_MC_BAIRRO.nextval, 28, 'Ribeir√£o da Ponte', null);     
     
 INSERT INTO t_mc_bairro
     ( cd_bairro, cd_cidade, nm_bairro, nm_zona_bairro) 
 VALUES 
-    (SQ_MC_BAIRRO.nextval, 29, 'Ba˙s', null);    
+    (SQ_MC_BAIRRO.nextval, 29, 'Ba√∫s', null);    
     
 INSERT INTO t_mc_bairro
     ( cd_bairro, cd_cidade, nm_bairro, nm_zona_bairro) 
@@ -1245,7 +1245,7 @@ VALUES
 INSERT INTO t_mc_bairro
     ( cd_bairro, cd_cidade, nm_bairro, nm_zona_bairro) 
 VALUES 
-    (SQ_MC_BAIRRO.nextval, 33, 'Cer‚mica', null);    
+    (SQ_MC_BAIRRO.nextval, 33, 'Cer√¢mica', null);    
     
 INSERT INTO t_mc_bairro
     ( cd_bairro, cd_cidade, nm_bairro, nm_zona_bairro) 
@@ -1280,7 +1280,7 @@ VALUES
 INSERT INTO t_mc_bairro
     ( cd_bairro, cd_cidade, nm_bairro, nm_zona_bairro) 
 VALUES 
-    (SQ_MC_BAIRRO.nextval, 35, 'Citrol‚ndia', null);    
+    (SQ_MC_BAIRRO.nextval, 35, 'Citrol√¢ndia', null);    
     
 INSERT INTO t_mc_bairro
     ( cd_bairro, cd_cidade, nm_bairro, nm_zona_bairro) 
@@ -1295,7 +1295,7 @@ VALUES
 INSERT INTO t_mc_bairro
     ( cd_bairro, cd_cidade, nm_bairro, nm_zona_bairro) 
 VALUES 
-    (SQ_MC_BAIRRO.nextval, 36, 'HÌpica', null);    
+    (SQ_MC_BAIRRO.nextval, 36, 'H√≠pica', null);    
     
 INSERT INTO t_mc_bairro
     ( cd_bairro, cd_cidade, nm_bairro, nm_zona_bairro) 
@@ -1325,7 +1325,7 @@ VALUES
 INSERT INTO t_mc_bairro
     ( cd_bairro, cd_cidade, nm_bairro, nm_zona_bairro) 
 VALUES 
-    (SQ_MC_BAIRRO.nextval, 38, 'NazarÈ', null);    
+    (SQ_MC_BAIRRO.nextval, 38, 'Nazar√©', null);    
     
 INSERT INTO t_mc_bairro
     ( cd_bairro, cd_cidade, nm_bairro, nm_zona_bairro) 
@@ -1345,12 +1345,12 @@ VALUES
 INSERT INTO t_mc_bairro
     ( cd_bairro, cd_cidade, nm_bairro, nm_zona_bairro) 
 VALUES 
-    (SQ_MC_BAIRRO.nextval, 39, 'Vila Lim„o', null);    
+    (SQ_MC_BAIRRO.nextval, 39, 'Vila Lim√£o', null);    
   
 INSERT INTO t_mc_bairro
     ( cd_bairro, cd_cidade, nm_bairro, nm_zona_bairro) 
 VALUES 
-    (SQ_MC_BAIRRO.nextval, 40, 'Banc·rios', null);    
+    (SQ_MC_BAIRRO.nextval, 40, 'Banc√°rios', null);    
     
 INSERT INTO t_mc_bairro
     ( cd_bairro, cd_cidade, nm_bairro, nm_zona_bairro) 
@@ -1360,7 +1360,7 @@ VALUES
 INSERT INTO t_mc_bairro
     ( cd_bairro, cd_cidade, nm_bairro, nm_zona_bairro) 
 VALUES 
-    (SQ_MC_BAIRRO.nextval, 40, 'AnatÛlia', null);    
+    (SQ_MC_BAIRRO.nextval, 40, 'Anat√≥lia', null);    
     
 INSERT INTO t_mc_bairro
     ( cd_bairro, cd_cidade, nm_bairro, nm_zona_bairro) 
@@ -1385,7 +1385,7 @@ VALUES
 INSERT INTO t_mc_bairro
     ( cd_bairro, cd_cidade, nm_bairro, nm_zona_bairro) 
 VALUES 
-    (SQ_MC_BAIRRO.nextval, 42, 'EsperanÁa', null);    
+    (SQ_MC_BAIRRO.nextval, 42, 'Esperan√ßa', null);    
 
 INSERT INTO t_mc_bairro
     ( cd_bairro, cd_cidade, nm_bairro, nm_zona_bairro) 
@@ -1405,12 +1405,12 @@ VALUES
 INSERT INTO t_mc_bairro
     ( cd_bairro, cd_cidade, nm_bairro, nm_zona_bairro) 
 VALUES 
-    (SQ_MC_BAIRRO.nextval, 43, 'Port„o', null);   
+    (SQ_MC_BAIRRO.nextval, 43, 'Port√£o', null);   
     
 INSERT INTO t_mc_bairro
     ( cd_bairro, cd_cidade, nm_bairro, nm_zona_bairro) 
 VALUES 
-    (SQ_MC_BAIRRO.nextval, 44, 'IguaÁu', null);    
+    (SQ_MC_BAIRRO.nextval, 44, 'Igua√ßu', null);    
     
 INSERT INTO t_mc_bairro
     ( cd_bairro, cd_cidade, nm_bairro, nm_zona_bairro) 
@@ -1475,7 +1475,7 @@ VALUES
 INSERT INTO t_mc_bairro
     ( cd_bairro, cd_cidade, nm_bairro, nm_zona_bairro) 
 VALUES 
-    (SQ_MC_BAIRRO.nextval, 48, 'OratÛrio', null);    
+    (SQ_MC_BAIRRO.nextval, 48, 'Orat√≥rio', null);    
 
 INSERT INTO t_mc_bairro
     ( cd_bairro, cd_cidade, nm_bairro, nm_zona_bairro) 
@@ -1510,12 +1510,12 @@ VALUES
 INSERT INTO t_mc_bairro
     ( cd_bairro, cd_cidade, nm_bairro, nm_zona_bairro) 
 VALUES 
-    (SQ_MC_BAIRRO.nextval, 50, 'S„o Pedro', null);   
+    (SQ_MC_BAIRRO.nextval, 50, 'S√£o Pedro', null);   
   
 INSERT INTO t_mc_bairro
     ( cd_bairro, cd_cidade, nm_bairro, nm_zona_bairro) 
 VALUES 
-    (SQ_MC_BAIRRO.nextval, 51, 'Anaj·s', null);    
+    (SQ_MC_BAIRRO.nextval, 51, 'Anaj√°s', null);    
     
 INSERT INTO t_mc_bairro
     ( cd_bairro, cd_cidade, nm_bairro, nm_zona_bairro) 
@@ -1570,7 +1570,7 @@ VALUES
 INSERT INTO t_mc_bairro
     ( cd_bairro, cd_cidade, nm_bairro, nm_zona_bairro) 
 VALUES 
-    (SQ_MC_BAIRRO.nextval, 54, 'Siderl‚ndia', null);   
+    (SQ_MC_BAIRRO.nextval, 54, 'Siderl√¢ndia', null);   
   
 INSERT INTO t_mc_bairro
     ( cd_bairro, cd_cidade, nm_bairro, nm_zona_bairro) 
@@ -1590,7 +1590,7 @@ VALUES
 INSERT INTO t_mc_bairro
     ( cd_bairro, cd_cidade, nm_bairro, nm_zona_bairro) 
 VALUES 
-    (SQ_MC_BAIRRO.nextval, 56, 'Santo AntÙnio', null);    
+    (SQ_MC_BAIRRO.nextval, 56, 'Santo Ant√¥nio', null);    
     
 INSERT INTO t_mc_bairro
     ( cd_bairro, cd_cidade, nm_bairro, nm_zona_bairro) 
@@ -1605,12 +1605,12 @@ VALUES
 INSERT INTO t_mc_bairro
     ( cd_bairro, cd_cidade, nm_bairro, nm_zona_bairro) 
 VALUES 
-    (SQ_MC_BAIRRO.nextval, 57, 'CemitÈrio', null);    
+    (SQ_MC_BAIRRO.nextval, 57, 'Cemit√©rio', null);    
     
 INSERT INTO t_mc_bairro
     ( cd_bairro, cd_cidade, nm_bairro, nm_zona_bairro) 
 VALUES 
-    (SQ_MC_BAIRRO.nextval, 57, 'EstaÁ„o', null);    
+    (SQ_MC_BAIRRO.nextval, 57, 'Esta√ß√£o', null);    
 
 INSERT INTO t_mc_bairro
     ( cd_bairro, cd_cidade, nm_bairro, nm_zona_bairro) 
@@ -1640,7 +1640,7 @@ VALUES
 INSERT INTO t_mc_bairro
     ( cd_bairro, cd_cidade, nm_bairro, nm_zona_bairro) 
 VALUES 
-    (SQ_MC_BAIRRO.nextval, 59, 'Boa Uni„o', null);    
+    (SQ_MC_BAIRRO.nextval, 59, 'Boa Uni√£o', null);    
 
 INSERT INTO t_mc_bairro
     ( cd_bairro, cd_cidade, nm_bairro, nm_zona_bairro) 
@@ -1670,7 +1670,7 @@ VALUES
 INSERT INTO t_mc_bairro
     ( cd_bairro, cd_cidade, nm_bairro, nm_zona_bairro) 
 VALUES 
-    (SQ_MC_BAIRRO.nextval, 61, 'Cuni„', null);    
+    (SQ_MC_BAIRRO.nextval, 61, 'Cuni√£', null);    
 
 INSERT INTO t_mc_bairro
     ( cd_bairro, cd_cidade, nm_bairro, nm_zona_bairro) 
@@ -1745,7 +1745,7 @@ VALUES
 INSERT INTO t_mc_bairro
     ( cd_bairro, cd_cidade, nm_bairro, nm_zona_bairro) 
 VALUES 
-    (SQ_MC_BAIRRO.nextval, 66, 'Conjunto Multir„o', null);    
+    (SQ_MC_BAIRRO.nextval, 66, 'Conjunto Multir√£o', null);    
 
 INSERT INTO t_mc_bairro
     ( cd_bairro, cd_cidade, nm_bairro, nm_zona_bairro) 
@@ -1755,7 +1755,7 @@ VALUES
 INSERT INTO t_mc_bairro
     ( cd_bairro, cd_cidade, nm_bairro, nm_zona_bairro) 
 VALUES 
-    (SQ_MC_BAIRRO.nextval, 67, 'CacupÈ', null);    
+    (SQ_MC_BAIRRO.nextval, 67, 'Cacup√©', null);    
     
 INSERT INTO t_mc_bairro
     ( cd_bairro, cd_cidade, nm_bairro, nm_zona_bairro) 
@@ -1795,7 +1795,7 @@ VALUES
 INSERT INTO t_mc_bairro
     ( cd_bairro, cd_cidade, nm_bairro, nm_zona_bairro) 
 VALUES 
-    (SQ_MC_BAIRRO.nextval, 69, 'EsperanÁa', null);    
+    (SQ_MC_BAIRRO.nextval, 69, 'Esperan√ßa', null);    
     
 INSERT INTO t_mc_bairro
     ( cd_bairro, cd_cidade, nm_bairro, nm_zona_bairro) 
@@ -1840,7 +1840,7 @@ VALUES
 INSERT INTO t_mc_bairro
     ( cd_bairro, cd_cidade, nm_bairro, nm_zona_bairro) 
 VALUES 
-    (SQ_MC_BAIRRO.nextval, 72, 'Jardim das NaÁıes', null);          
+    (SQ_MC_BAIRRO.nextval, 72, 'Jardim das Na√ß√µes', null);          
     
 INSERT INTO t_mc_bairro
     ( cd_bairro, cd_cidade, nm_bairro, nm_zona_bairro) 
@@ -1855,7 +1855,7 @@ VALUES
 INSERT INTO t_mc_bairro
     ( cd_bairro, cd_cidade, nm_bairro, nm_zona_bairro) 
 VALUES 
-    (SQ_MC_BAIRRO.nextval, 73, 'Farol‚ndia', null);    
+    (SQ_MC_BAIRRO.nextval, 73, 'Farol√¢ndia', null);    
     
 INSERT INTO t_mc_bairro
     ( cd_bairro, cd_cidade, nm_bairro, nm_zona_bairro) 
@@ -1925,7 +1925,7 @@ VALUES
 INSERT INTO t_mc_bairro
     ( cd_bairro, cd_cidade, nm_bairro, nm_zona_bairro) 
 VALUES 
-    (SQ_MC_BAIRRO.nextval, 78, 'M„o Santa', null);    
+    (SQ_MC_BAIRRO.nextval, 78, 'M√£o Santa', null);    
 
 INSERT INTO t_mc_bairro
     ( cd_bairro, cd_cidade, nm_bairro, nm_zona_bairro) 
@@ -1947,7 +1947,7 @@ INSERT INTO t_mc_bairro
 VALUES 
     (SQ_MC_BAIRRO.nextval, 79, 'Lago Sul', null);       
 
--- Carregar EndereÁos
+-- Carregar Endere√ßos
 
 INSERT INTO t_mc_logradouro
     ( cd_logradouro, cd_bairro, nm_logradouro, nr_cep) 
@@ -1972,7 +1972,7 @@ VALUES
  INSERT INTO t_mc_logradouro
     ( cd_logradouro, cd_bairro, nm_logradouro, nr_cep) 
 VALUES 
-    (SQ_MC_LOGRADOURO.nextval, 5, 'Av JosÈ Nogueira Costa, 565 - AC 475 KM 34', null);   
+    (SQ_MC_LOGRADOURO.nextval, 5, 'Av Jos√© Nogueira Costa, 565 - AC 475 KM 34', null);   
     
 INSERT INTO t_mc_logradouro
     ( cd_logradouro, cd_bairro, nm_logradouro, nr_cep) 
@@ -1987,7 +1987,7 @@ VALUES
 INSERT INTO t_mc_logradouro
     ( cd_logradouro, cd_bairro, nm_logradouro, nr_cep) 
 VALUES 
-    (SQ_MC_LOGRADOURO.nextval, 8, 'R ¡lvaro Rego Millen, 230', null);    
+    (SQ_MC_LOGRADOURO.nextval, 8, 'R √Ålvaro Rego Millen, 230', null);    
     
 INSERT INTO t_mc_logradouro
     ( cd_logradouro, cd_bairro, nm_logradouro, nr_cep) 
@@ -1997,7 +1997,7 @@ VALUES
 INSERT INTO t_mc_logradouro
     ( cd_logradouro, cd_bairro, nm_logradouro, nr_cep) 
 VALUES 
-    (SQ_MC_LOGRADOURO.nextval, 10, 'R Jandir LuÌs da Rocha, 328', null);    
+    (SQ_MC_LOGRADOURO.nextval, 10, 'R Jandir Lu√≠s da Rocha, 328', null);    
     
 INSERT INTO t_mc_logradouro
     ( cd_logradouro, cd_bairro, nm_logradouro, nr_cep) 
@@ -2017,7 +2017,7 @@ VALUES
 INSERT INTO t_mc_logradouro
     ( cd_logradouro, cd_bairro, nm_logradouro, nr_cep) 
 VALUES 
-    (SQ_MC_LOGRADOURO.nextval, 14, 'R JosÈ Barbosa Neto, 50', null);    
+    (SQ_MC_LOGRADOURO.nextval, 14, 'R Jos√© Barbosa Neto, 50', null);    
     
 INSERT INTO t_mc_logradouro
     ( cd_logradouro, cd_bairro, nm_logradouro, nr_cep) 
@@ -2037,7 +2037,7 @@ VALUES
 INSERT INTO t_mc_logradouro
     ( cd_logradouro, cd_bairro, nm_logradouro, nr_cep) 
 VALUES 
-    (SQ_MC_LOGRADOURO.nextval, 18, 'Av Waldomiro Peres GonÁalves, 2409,', null);    
+    (SQ_MC_LOGRADOURO.nextval, 18, 'Av Waldomiro Peres Gon√ßalves, 2409,', null);    
     
 INSERT INTO t_mc_logradouro
     ( cd_logradouro, cd_bairro, nm_logradouro, nr_cep) 
@@ -2052,7 +2052,7 @@ VALUES
  INSERT INTO t_mc_logradouro
     ( cd_logradouro, cd_bairro, nm_logradouro, nr_cep) 
 VALUES 
-    (SQ_MC_LOGRADOURO.nextval, 21, 'R Jo„o Domingos de Ara˙jo, 75', null);   
+    (SQ_MC_LOGRADOURO.nextval, 21, 'R Jo√£o Domingos de Ara√∫jo, 75', null);   
     
 INSERT INTO t_mc_logradouro
     ( cd_logradouro, cd_bairro, nm_logradouro, nr_cep) 
@@ -2087,7 +2087,7 @@ VALUES
 INSERT INTO t_mc_logradouro
     ( cd_logradouro, cd_bairro, nm_logradouro, nr_cep) 
 VALUES 
-    (SQ_MC_LOGRADOURO.nextval, 28, 'R Maria Elias TomÈ, 30', null); 
+    (SQ_MC_LOGRADOURO.nextval, 28, 'R Maria Elias Tom√©, 30', null); 
     
 INSERT INTO t_mc_logradouro
     ( cd_logradouro, cd_bairro, nm_logradouro, nr_cep) 
@@ -2097,7 +2097,7 @@ VALUES
 INSERT INTO t_mc_logradouro
     ( cd_logradouro, cd_bairro, nm_logradouro, nr_cep) 
 VALUES 
-    (SQ_MC_LOGRADOURO.nextval, 30, 'R Goi·s, 65', null);     
+    (SQ_MC_LOGRADOURO.nextval, 30, 'R Goi√°s, 65', null);     
     
 INSERT INTO t_mc_logradouro
     ( cd_logradouro, cd_bairro, nm_logradouro, nr_cep) 
@@ -2117,12 +2117,12 @@ VALUES
 INSERT INTO t_mc_logradouro
     ( cd_logradouro, cd_bairro, nm_logradouro, nr_cep) 
 VALUES 
-    (SQ_MC_LOGRADOURO.nextval, 34, 'Av S„o Lucas, 393', null);     
+    (SQ_MC_LOGRADOURO.nextval, 34, 'Av S√£o Lucas, 393', null);     
     
 INSERT INTO t_mc_logradouro
     ( cd_logradouro, cd_bairro, nm_logradouro, nr_cep) 
 VALUES 
-    (SQ_MC_LOGRADOURO.nextval, 35, 'R EmÌlio de Menezes, 16,', null);     
+    (SQ_MC_LOGRADOURO.nextval, 35, 'R Em√≠lio de Menezes, 16,', null);     
     
 INSERT INTO t_mc_logradouro
     ( cd_logradouro, cd_bairro, nm_logradouro, nr_cep) 
@@ -2147,17 +2147,17 @@ VALUES
 INSERT INTO t_mc_logradouro
     ( cd_logradouro, cd_bairro, nm_logradouro, nr_cep) 
 VALUES 
-    (SQ_MC_LOGRADOURO.nextval, 40, 'Av Jaragu·, 1091', null);     
+    (SQ_MC_LOGRADOURO.nextval, 40, 'Av Jaragu√°, 1091', null);     
     
 INSERT INTO t_mc_logradouro
     ( cd_logradouro, cd_bairro, nm_logradouro, nr_cep) 
 VALUES 
-    (SQ_MC_LOGRADOURO.nextval, 41, 'Av AntÙnio de Almeida, 1661', null);     
+    (SQ_MC_LOGRADOURO.nextval, 41, 'Av Ant√¥nio de Almeida, 1661', null);     
     
 INSERT INTO t_mc_logradouro
     ( cd_logradouro, cd_bairro, nm_logradouro, nr_cep) 
 VALUES 
-    (SQ_MC_LOGRADOURO.nextval, 42, 'R CÈsar Lattes, 110 - Ap 104', null);     
+    (SQ_MC_LOGRADOURO.nextval, 42, 'R C√©sar Lattes, 110 - Ap 104', null);     
     
 INSERT INTO t_mc_logradouro
     ( cd_logradouro, cd_bairro, nm_logradouro, nr_cep) 
@@ -2187,17 +2187,17 @@ VALUES
 INSERT INTO t_mc_logradouro
     ( cd_logradouro, cd_bairro, nm_logradouro, nr_cep) 
 VALUES 
-    (SQ_MC_LOGRADOURO.nextval, 48, 'R Artur LuÌs CorrÍa, 869', null);     
+    (SQ_MC_LOGRADOURO.nextval, 48, 'R Artur Lu√≠s Corr√™a, 869', null);     
     
 INSERT INTO t_mc_logradouro
     ( cd_logradouro, cd_bairro, nm_logradouro, nr_cep) 
 VALUES 
-    (SQ_MC_LOGRADOURO.nextval, 49, 'R S„o Gabriel, 435', null);     
+    (SQ_MC_LOGRADOURO.nextval, 49, 'R S√£o Gabriel, 435', null);     
     
 INSERT INTO t_mc_logradouro
     ( cd_logradouro, cd_bairro, nm_logradouro, nr_cep) 
 VALUES 
-    (SQ_MC_LOGRADOURO.nextval, 50, 'R Br·s Magaldi Fernandes, 300 - an-8', null);     
+    (SQ_MC_LOGRADOURO.nextval, 50, 'R Br√°s Magaldi Fernandes, 300 - an-8', null);     
     
 INSERT INTO t_mc_logradouro
     ( cd_logradouro, cd_bairro, nm_logradouro, nr_cep) 
@@ -2217,15 +2217,15 @@ VALUES
 INSERT INTO t_mc_logradouro
     ( cd_logradouro, cd_bairro, nm_logradouro, nr_cep) 
 VALUES 
-    (SQ_MC_LOGRADOURO.nextval, 54, 'R Setecentos e Cinq¸enta e Seis, 248', null);     
+    (SQ_MC_LOGRADOURO.nextval, 54, 'R Setecentos e Cinq√ºenta e Seis, 248', null);     
     
 INSERT INTO t_mc_logradouro
     ( cd_logradouro, cd_bairro, nm_logradouro, nr_cep) 
 VALUES 
-    (SQ_MC_LOGRADOURO.nextval, 55, 'R Setecentos e Cinq¸enta e Seis, 248', null);     
+    (SQ_MC_LOGRADOURO.nextval, 55, 'R Setecentos e Cinq√ºenta e Seis, 248', null);     
        
     
--- LETRA D
+-- LETRA D - Por fim, cadastre na tabela DE ENDERECO FUNCIONARIO todos os funcion√°rios com no m√≠nimo um endere√ßo. Escolha v√°rios Estados do Brasil, ou seja, um endere√ßo para cada localidade. Utilize nomes significativos e relevantes.
 
 INSERT INTO t_mc_end_func
     ( cd_funcionario, cd_logradouro, nr_end, ds_complemento_end, dt_inicio, dt_termino, st_end) 
@@ -2490,7 +2490,7 @@ VALUES
 INSERT INTO t_mc_cliente
     (nr_cliente, nm_cliente, qt_estrelas, vl_medio_compra, st_cliente, ds_email, nr_telefone, nm_login, ds_senha) 
 VALUES 
-    (SQ_MC_CLIENTE.nextval, 'AndrÈ Borges', 4, 350.00, 'A', 'andre.borges@gmail.com', '(24) 98427-7630', 'andborges', 'andrezinho123');
+    (SQ_MC_CLIENTE.nextval, 'Andr√© Borges', 4, 350.00, 'A', 'andre.borges@gmail.com', '(24) 98427-7630', 'andborges', 'andrezinho123');
 
 INSERT INTO t_mc_cliente
     (nr_cliente, nm_cliente, qt_estrelas, vl_medio_compra, st_cliente, ds_email, nr_telefone, nm_login, ds_senha) 
@@ -2505,7 +2505,7 @@ VALUES
 INSERT INTO t_mc_cliente
     (nr_cliente, nm_cliente, qt_estrelas, vl_medio_compra, st_cliente, ds_email, nr_telefone, nm_login, ds_senha) 
 VALUES 
-    (SQ_MC_CLIENTE.nextval, 'Jo„o Pedro Balaio', 4, 550.00, 'A', 'jp.balaio@hotmail.com', '(48) 97966-7188', 'jpbalaio', 'balaio123');
+    (SQ_MC_CLIENTE.nextval, 'Jo√£o Pedro Balaio', 4, 550.00, 'A', 'jp.balaio@hotmail.com', '(48) 97966-7188', 'jpbalaio', 'balaio123');
 
 INSERT INTO t_mc_cliente
     (nr_cliente, nm_cliente, qt_estrelas, vl_medio_compra, st_cliente, ds_email, nr_telefone, nm_login, ds_senha) 
@@ -2525,7 +2525,7 @@ VALUES
 INSERT INTO t_mc_cliente
     (nr_cliente, nm_cliente, qt_estrelas, vl_medio_compra, st_cliente, ds_email, nr_telefone, nm_login, ds_senha) 
 VALUES 
-    (SQ_MC_CLIENTE.nextval, 'Jonathan MelgaÁo', 5, 280.00, 'A', 'jonathan.melgaÁo@gmail.com', '(79) 98353-9947', 'jonmelga', 'johny123');
+    (SQ_MC_CLIENTE.nextval, 'Jonathan Melga√ßo', 5, 280.00, 'A', 'jonathan.melga√ßo@gmail.com', '(79) 98353-9947', 'jonmelga', 'johny123');
 
 INSERT INTO t_mc_cliente
     (nr_cliente, nm_cliente, qt_estrelas, vl_medio_compra, st_cliente, ds_email, nr_telefone, nm_login, ds_senha) 
@@ -2562,7 +2562,7 @@ INSERT INTO t_mc_cliente
 VALUES 
     (SQ_MC_CLIENTE.nextval, 'Smart Fit', 5, 3000.00, 'A', 'smart.fit@gmail.com', '(77) 98251-1374', 'smartfit', 'acad123');
 
--- Carregar dois endereÁos clientes
+-- Carregar dois endere√ßos clientes
 
 INSERT INTO t_mc_end_cli
     (nr_cliente, cd_logradouro_cli, nr_end, ds_complemento_end, dt_inicio, dt_termino, st_end) 
@@ -2744,14 +2744,14 @@ VALUES
     (15, 30, 417, null,
     TO_DATE('22/06/2021','DD/MM/YYYY'), null, 'A');     
     
--- LETRA F
+-- LETRA F - Cadastre um novo cliente que j√° tenha um mesmo nome de login j√° criado. (*Exiba a instru√ß√£o SQL executada para realizar a tarefa e apresente o resultado dessa execu√ß√£o.) Foi poss√≠vel incluir esse novo cliente? Explique.
 
 INSERT INTO t_mc_cliente
     (nr_cliente, nm_cliente, qt_estrelas, vl_medio_compra, st_cliente, ds_email, nr_telefone, nm_login, ds_senha) 
 VALUES 
     (SQ_MC_CLIENTE.nextval, 'Paulo Teixeira', 5, 345.00, 'A', 'paulo.teixeira@gmail.com', '(45) 98671-1684', 'pteixeira', 'paulotx123');
     
--- N„o foi possivel inserir o registro pois anteriormente ja haviamos criado a CONSTRAINT UNIQUE (onde n„o se aceitam valores repetidos) para a coluna nm_login.
+-- N√£o foi possivel inserir o registro pois anteriormente ja haviamos criado a CONSTRAINT UNIQUE (onde n√£o se aceitam valores repetidos) para a coluna nm_login.
 
 -- LETRA G (CATEGORIAS PRODUTO)
 
@@ -2765,7 +2765,7 @@ VALUES
 INSERT INTO t_mc_categoria_prod
     (cd_categoria, tp_categoria, ds_categoria, dt_inicio, dt_termino, st_categoria) 
 VALUES 
-    (SQ_MC_CATEGORIA_PROD.nextval, 'P', '¡udio', 
+    (SQ_MC_CATEGORIA_PROD.nextval, 'P', '√Åudio', 
     TO_DATE('11/11/2019','DD/MM/YYYY'), 
     null, 'A');    
     
@@ -2786,7 +2786,7 @@ VALUES
 INSERT INTO t_mc_categoria_prod
     (cd_categoria, tp_categoria, ds_categoria, dt_inicio, dt_termino, st_categoria) 
 VALUES 
-    (SQ_MC_CATEGORIA_PROD.nextval, 'P', 'Colchıes', 
+    (SQ_MC_CATEGORIA_PROD.nextval, 'P', 'Colch√µes', 
     TO_DATE('25/11/2019','DD/MM/YYYY'), 
     null, 'A');    
     
@@ -2814,7 +2814,7 @@ VALUES
 INSERT INTO t_mc_categoria_prod
     (cd_categoria, tp_categoria, ds_categoria, dt_inicio, dt_termino, st_categoria) 
 VALUES 
-    (SQ_MC_CATEGORIA_PROD.nextval, 'P', 'Inform·tica', 
+    (SQ_MC_CATEGORIA_PROD.nextval, 'P', 'Inform√°tica', 
     TO_DATE('11/12/2019','DD/MM/YYYY'), 
     null, 'A');    
             
@@ -2835,16 +2835,16 @@ VALUES
 INSERT INTO t_mc_categoria_prod
     (cd_categoria, tp_categoria, ds_categoria, dt_inicio, dt_termino, st_categoria) 
 VALUES 
-    (SQ_MC_CATEGORIA_PROD.nextval, 'P', 'TV e Utilidades DomÈsticas', 
+    (SQ_MC_CATEGORIA_PROD.nextval, 'P', 'TV e Utilidades Dom√©sticas', 
     TO_DATE('20/12/2019','DD/MM/YYYY'), 
     null, 'A'); 
     
--- LETRA H  (CATEGORIA VIDEO)  
+-- LETRA H  (CATEGORIA VIDEO) - Cadastre as seguintes categorias para os v√≠deos: Instala√ß√£o do Produto; Uso no Cotidiano; Comercial com Personalidade; entre outros.
     
 INSERT INTO t_mc_categoria_prod
     (cd_categoria, tp_categoria, ds_categoria, dt_inicio, dt_termino, st_categoria) 
 VALUES 
-    (SQ_MC_CATEGORIA_PROD.nextval, 'V', 'InstalaÁ„o Produto', 
+    (SQ_MC_CATEGORIA_PROD.nextval, 'V', 'Instala√ß√£o Produto', 
     TO_DATE('25/12/2019','DD/MM/YYYY'), 
     null, 'A');     
     
@@ -2862,17 +2862,17 @@ VALUES
     TO_DATE('20/12/2019','DD/MM/YYYY'), 
     null, 'A');     
     
--- LETRA I
+-- LETRA I -  Cadastre 20 produtos e associe √†s categorias adequadas ao produto
 
 INSERT INTO t_mc_produto
     (cd_produto, cd_categoria, nr_cd_barras_prod, ds_produto, vl_unitario, tp_embalagem, st_produto, vl_perc_lucro, ds_completa_prod) 
 VALUES 
-    (SQ_MC_PRODUTO.nextval, 1, null, 'Vaso de Cer‚mica', 130.00, null, 'A', null, 'Vaso de Cer‚mica feito artesanalmente.');
+    (SQ_MC_PRODUTO.nextval, 1, null, 'Vaso de Cer√¢mica', 130.00, null, 'A', null, 'Vaso de Cer√¢mica feito artesanalmente.');
 
 INSERT INTO t_mc_produto
     (cd_produto, cd_categoria, nr_cd_barras_prod, ds_produto, vl_unitario, tp_embalagem, st_produto, vl_perc_lucro, ds_completa_prod) 
 VALUES 
-    (SQ_MC_PRODUTO.nextval, 2, null, 'Aparelho de som automotivo', 440.00, null, 'A', null, 'Aparelho completo de som para carros com conex„o via bluetooth.');       
+    (SQ_MC_PRODUTO.nextval, 2, null, 'Aparelho de som automotivo', 440.00, null, 'A', null, 'Aparelho completo de som para carros com conex√£o via bluetooth.');       
 
 INSERT INTO t_mc_produto
     (cd_produto, cd_categoria, nr_cd_barras_prod, ds_produto, vl_unitario, tp_embalagem, st_produto, vl_perc_lucro, ds_completa_prod) 
@@ -2882,12 +2882,12 @@ VALUES
 INSERT INTO t_mc_produto
     (cd_produto, cd_categoria, nr_cd_barras_prod, ds_produto, vl_unitario, tp_embalagem, st_produto, vl_perc_lucro, ds_completa_prod) 
 VALUES 
-    (SQ_MC_PRODUTO.nextval, 4, null, 'Capinha de Silicone', 60.00, null, 'A', null, 'Capinha de proteÁ„o para celulares e smartphones feitos de silicone.'); 
+    (SQ_MC_PRODUTO.nextval, 4, null, 'Capinha de Silicone', 60.00, null, 'A', null, 'Capinha de prote√ß√£o para celulares e smartphones feitos de silicone.'); 
 
 INSERT INTO t_mc_produto
     (cd_produto, cd_categoria, nr_cd_barras_prod, ds_produto, vl_unitario, tp_embalagem, st_produto, vl_perc_lucro, ds_completa_prod) 
 VALUES 
-    (SQ_MC_PRODUTO.nextval, 5, null, 'Colch„o Inflavel', 50.00, null, 'A', null, 'Colch„o inflavel de casal com enchedor.');
+    (SQ_MC_PRODUTO.nextval, 5, null, 'Colch√£o Inflavel', 50.00, null, 'A', null, 'Colch√£o inflavel de casal com enchedor.');
 
 INSERT INTO t_mc_produto
     (cd_produto, cd_categoria, nr_cd_barras_prod, ds_produto, vl_unitario, tp_embalagem, st_produto, vl_perc_lucro, ds_completa_prod) 
@@ -2897,7 +2897,7 @@ VALUES
 INSERT INTO t_mc_produto
     (cd_produto, cd_categoria, nr_cd_barras_prod, ds_produto, vl_unitario, tp_embalagem, st_produto, vl_perc_lucro, ds_completa_prod) 
 VALUES 
-    (SQ_MC_PRODUTO.nextval, 7, null, 'Furadeira', 400.00, null, 'A', null, 'Furadeira elÈtrica perfeito para qualquer tipo de superficie.');
+    (SQ_MC_PRODUTO.nextval, 7, null, 'Furadeira', 400.00, null, 'A', null, 'Furadeira el√©trica perfeito para qualquer tipo de superficie.');
 
 INSERT INTO t_mc_produto
     (cd_produto, cd_categoria, nr_cd_barras_prod, ds_produto, vl_unitario, tp_embalagem, st_produto, vl_perc_lucro, ds_completa_prod) 
@@ -2917,12 +2917,12 @@ VALUES
 INSERT INTO t_mc_produto
     (cd_produto, cd_categoria, nr_cd_barras_prod, ds_produto, vl_unitario, tp_embalagem, st_produto, vl_perc_lucro, ds_completa_prod) 
 VALUES 
-    (SQ_MC_PRODUTO.nextval, 11, null, 'Cama Pet', 180.00, null, 'A', null, 'Cama para seu bichinho de estimaÁ„o, feita para cachorros de pequeno porte.');
+    (SQ_MC_PRODUTO.nextval, 11, null, 'Cama Pet', 180.00, null, 'A', null, 'Cama para seu bichinho de estima√ß√£o, feita para cachorros de pequeno porte.');
 
 INSERT INTO t_mc_produto
     (cd_produto, cd_categoria, nr_cd_barras_prod, ds_produto, vl_unitario, tp_embalagem, st_produto, vl_perc_lucro, ds_completa_prod) 
 VALUES 
-    (SQ_MC_PRODUTO.nextval, 12, null, 'TV 50 Polegadas', 2500.00, null, 'A', null, 'Televis„o com controle inteligente, 4K, equipada com todos os aplicativos de streaming.');
+    (SQ_MC_PRODUTO.nextval, 12, null, 'TV 50 Polegadas', 2500.00, null, 'A', null, 'Televis√£o com controle inteligente, 4K, equipada com todos os aplicativos de streaming.');
 
 INSERT INTO t_mc_produto
     (cd_produto, cd_categoria, nr_cd_barras_prod, ds_produto, vl_unitario, tp_embalagem, st_produto, vl_perc_lucro, ds_completa_prod) 
@@ -2932,17 +2932,17 @@ VALUES
 INSERT INTO t_mc_produto
     (cd_produto, cd_categoria, nr_cd_barras_prod, ds_produto, vl_unitario, tp_embalagem, st_produto, vl_perc_lucro, ds_completa_prod) 
 VALUES 
-    (SQ_MC_PRODUTO.nextval, 8, null, 'GTA 6', 250.00, null, 'A', null, 'Novo lanÁamento da franquia de jogos mais famosa do mundo.');
+    (SQ_MC_PRODUTO.nextval, 8, null, 'GTA 6', 250.00, null, 'A', null, 'Novo lan√ßamento da franquia de jogos mais famosa do mundo.');
 
 INSERT INTO t_mc_produto
     (cd_produto, cd_categoria, nr_cd_barras_prod, ds_produto, vl_unitario, tp_embalagem, st_produto, vl_perc_lucro, ds_completa_prod) 
 VALUES 
-    (SQ_MC_PRODUTO.nextval, 9, null, 'Estabilizador', 180.00, null, 'A', null, 'Estabilizador potente para seu computador, sem preocupaÁıes com quedas de luz.');
+    (SQ_MC_PRODUTO.nextval, 9, null, 'Estabilizador', 180.00, null, 'A', null, 'Estabilizador potente para seu computador, sem preocupa√ß√µes com quedas de luz.');
     
 INSERT INTO t_mc_produto
     (cd_produto, cd_categoria, nr_cd_barras_prod, ds_produto, vl_unitario, tp_embalagem, st_produto, vl_perc_lucro, ds_completa_prod) 
 VALUES 
-    (SQ_MC_PRODUTO.nextval, 11, null, 'Brinquedo pet', 200.00, null, 'A', null, 'Brinquedo educativo para auxiliar no desenvolvimento do seu c„ozinho.');
+    (SQ_MC_PRODUTO.nextval, 11, null, 'Brinquedo pet', 200.00, null, 'A', null, 'Brinquedo educativo para auxiliar no desenvolvimento do seu c√£ozinho.');
 
 INSERT INTO t_mc_produto
     (cd_produto, cd_categoria, nr_cd_barras_prod, ds_produto, vl_unitario, tp_embalagem, st_produto, vl_perc_lucro, ds_completa_prod) 
@@ -2957,14 +2957,14 @@ VALUES
 INSERT INTO t_mc_produto
     (cd_produto, cd_categoria, nr_cd_barras_prod, ds_produto, vl_unitario, tp_embalagem, st_produto, vl_perc_lucro, ds_completa_prod) 
 VALUES 
-    (SQ_MC_PRODUTO.nextval, 12, null, 'Aspirador de pÛ', 1300.00, null, 'A', null, 'Aspirador de pÛ com funcionamento a bateria para longas limpezas.');    
+    (SQ_MC_PRODUTO.nextval, 12, null, 'Aspirador de p√≥', 1300.00, null, 'A', null, 'Aspirador de p√≥ com funcionamento a bateria para longas limpezas.');    
     
 INSERT INTO t_mc_produto
     (cd_produto, cd_categoria, nr_cd_barras_prod, ds_produto, vl_unitario, tp_embalagem, st_produto, vl_perc_lucro, ds_completa_prod) 
 VALUES 
-    (SQ_MC_PRODUTO.nextval, 9, null, 'Computador para escritÛrio', 2500.00, null, 'A', null, 'Computador feito para ajudar no dia a dia do trabalho.');   
+    (SQ_MC_PRODUTO.nextval, 9, null, 'Computador para escrit√≥rio', 2500.00, null, 'A', null, 'Computador feito para ajudar no dia a dia do trabalho.');   
     
--- LETRA J    
+-- LETRA J - Cadastre tr√™s v√≠deos de produtos e associe √†s categorias adequadas a cada v√≠deo do produto. Na coluna ds_path_video_prod, assuma um caminho-padr√£o em que os v√≠deos podem estar localizados.
     
 INSERT INTO t_mc_sgv_produto_video
     (cd_produto, nr_sequencia, cd_categoria, vd_produto, tp_video_prod, ds_path_video_prod, st_video_prod) 
@@ -3116,7 +3116,7 @@ INSERT INTO t_mc_sgv_produto_video
 VALUES 
     (11, 3, 15, null, null, 'www.melhorescompras.com.br/video3/camapet', 'A'); 
      
--- LETRA K
+-- LETRA K - Por fim, cadastre duas visualiza√ß√µes de v√≠deos de produtos e associe a um cliente a seu crit√©rio.
 
 INSERT INTO t_mc_sgv_visualizacao_video
     (cd_visualizacao_video, nr_cliente, cd_produto, dt_visualizacao, nr_hora_visualizacao, nr_minuto_video, nr_segundo_video) 
@@ -3188,7 +3188,7 @@ VALUES
     TO_DATE('11/06/2022','DD/MM/YYYY'),
     05, 06, 22);     
     
--- LETRA L    
+-- LETRA L - Cadastre uma categoria de produto com status I(nativo).  
 
 INSERT INTO t_mc_categoria_prod
     (cd_categoria, tp_categoria, ds_categoria, dt_inicio, dt_termino, st_categoria) 
@@ -3197,39 +3197,39 @@ VALUES
     TO_DATE('05/01/2020','DD/MM/YYYY'), 
     null, 'I');  
     
--- LETRA M
+-- LETRA M - Cadastre um produto com status I(nativo)
 
 INSERT INTO t_mc_produto
     (cd_produto, cd_categoria, nr_cd_barras_prod, ds_produto, vl_unitario, tp_embalagem, st_produto, vl_perc_lucro, ds_completa_prod) 
 VALUES 
-    (21, 9, null, 'Cabo de Rede', 45.00, null, 'I', null, 'Cabo de rede para conex„o com internet.');
+    (21, 9, null, 'Cabo de Rede', 45.00, null, 'I', null, 'Cabo de rede para conex√£o com internet.');
     
--- LETRA N    
+-- LETRA N - Selecione um espec√≠fico funcion√°rio e atualize seu cargo e tamb√©m aplique 12% de aumento de sal√°rio.   
 
 UPDATE t_mc_funcionario
     SET vl_salario = vl_salario * 1.12
     WHERE cd_funcionario = 43;
     
--- LETRA O
+-- LETRA O -Atualize o nome de um departamento a sua escolha, utilizando como filtro o nome do departamento anterior.
 
 UPDATE t_mc_depto
-    SET nm_depto = 'FinanÁas'
+    SET nm_depto = 'Finan√ßas'
     WHERE nm_depto = 'Financeiro';
     
--- LETRA P
+-- LETRA P - Atualize a data de nascimento de um cliente pessoa f√≠sica. Defina a nova data como sendo 18/5/2002.
 
 UPDATE t_mc_cli_fisica
     SET dt_nascimento = TO_DATE('18/05/2002','DD/MM/YYYY')
     WHERE nr_cliente = 1; 
     
--- LETRA Q 
+-- LETRA Q - Desative um funcion√°rio colocando o status como I(nativo) e tamb√©m a data de desligamento como sendo a data de hoje (sysdate).
 
 UPDATE t_mc_funcionario
     SET st_func = 'I',
     dt_desligamento = sysdate
     WHERE cd_funcionario = 50;
     
--- LETRA R SAC
+-- LETRA R SAC -  Atualize a descri√ß√£o detalhada de retorno do SAC feito pelo funcion√°rio. Insira um conte√∫do significativo. N√£o se esque√ßa de atualizar tamb√©m a data e hora de atendimento, bem como acrescendo o n√∫mero total de horas do atendimento SAC.
 
 -- INSERIR SAC
 
@@ -3249,34 +3249,34 @@ UPDATE t_mc_sgv_sac
     SET dt_atendimento = TO_DATE('01/02/2022','DD/MM/YYYY'),
     hr_atendimento_sac = 13,
     nr_tempo_total_sac = 24,
-    ds_detalhada_retorno_sac = 'Foi feita uma recomendaÁ„o de configuraÁ„o do console para o cliente e foi bem sucedida',
+    ds_detalhada_retorno_sac = 'Foi feita uma recomenda√ß√£o de configura√ß√£o do console para o cliente e foi bem sucedida',
     st_sac = 'F',
     nr_indice_satisfacao = 10
     WHERE nr_sac = 1;
         
--- LETRA S 
+-- LETRA S - Selecione um endere√ßo de cliente, coloque o status como I(nativo) e preencha a data de t√©rmino como sendo a data de ontem. Utilize a fun√ß√£o to_date para registrar esse novo valor da data.
 
 UPDATE t_mc_end_cli
     SET st_end = 'I',
     dt_termino = TO_DATE(current_date - 1)
     WHERE cd_logradouro_cli = 2;
     
--- LETRA T
+-- LETRA T - Tente eliminar um Estado que tenha uma cidade cadastrada. Isso foi poss√≠vel? Justifique o motivo.
 
 DELETE FROM t_mc_estado
     WHERE sg_estado = 'MG';
     
--- N„o foi possivel, pois se fosse deletada haveria uma violaÁ„o por ser chave estrangeira na tabela cidade.
+-- N√£o foi possivel, pois se fosse deletada haveria uma viola√ß√£o por ser chave estrangeira na tabela cidade.
 
--- LETRA U
+-- LETRA U - elecione um produto e tente atualizar seu status com o valor X. Isso foi poss√≠vel? Justifique o motivo.
 
 UPDATE t_mc_produto
     SET st_produto = 'X'
     WHERE cd_produto = 4;
     
--- N„o foi possivel, pois uma constraint CHECK foi criada para a coluna st_produto onde sÛ aceita os valores de A e I.
+-- N√£o foi possivel, pois uma constraint CHECK foi criada para a coluna st_produto onde s√≥ aceita os valores de A e I.
 
--- LETRA V
+-- LETRA V - Confirme todas as transa√ß√µes pendentes.
 
 COMMIT;
 
